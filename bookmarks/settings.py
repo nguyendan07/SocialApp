@@ -35,6 +35,7 @@ LOGOUT_URL = reverse_lazy('logout')
 # Application definition
 
 INSTALLED_APPS = [
+    'images.apps.ImagesConfig',
     'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social_django',
     'social.apps.django_app.default',
 ]
 
