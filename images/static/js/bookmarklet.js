@@ -37,7 +37,7 @@
             window.open(site_url + 'images/create/?url=' + encodeURIComponent(selected_image) + '&title='
                 + encodeURIComponent(jQuery('title').text()), '_blank');
         });
-    };
+    }
 // Check if jQuery is loaded
     if (typeof window.jQuery != 'undefined') {
         bookmarklet();
