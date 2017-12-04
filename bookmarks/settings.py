@@ -37,6 +37,7 @@ LOGOUT_URL = reverse_lazy('logout')
 INSTALLED_APPS = [
     'images.apps.ImagesConfig',
     'account.apps.AccountConfig',
+    'actions.apps.ActionsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -143,6 +144,10 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.twitter.TwitterOAuth',
     'social.backends.google.GoogleOAuth2',
 )
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
