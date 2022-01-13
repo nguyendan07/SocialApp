@@ -6,7 +6,7 @@ future==0.16.0
 idna==2.6
 oauthlib==2.0.6
 olefile==0.44
-Pillow==4.3.0
+Pillow==9.0.0
 pycryptodomex==3.4.7
 pyjwkest==1.4.0
 PyJWT==1.5.3
